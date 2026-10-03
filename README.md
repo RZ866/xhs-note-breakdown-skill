@@ -39,19 +39,19 @@
 
 已检查当前Codex的 `skill-installer`：支持从GitHub仓库指定目录安装。本项目将SKILL.md放在仓库根目录，安装时根路径为 `.`，名称为 `xiaohongshu-viral-commerce-note-analyzer`。
 
-**项目发布到GitHub后**，在Codex中说：
+在Codex中说：
 
-> 请帮我安装这个 Skill：粘贴实际 GitHub 仓库地址。SKILL.md 在仓库根目录，请安装整个目录，名称为 xiaohongshu-viral-commerce-note-analyzer。
+> 请帮我安装这个 Skill：https://github.com/RZ866/xhs-note-breakdown-skill 。SKILL.md 在仓库根目录，请安装整个目录，名称为 xiaohongshu-viral-commerce-note-analyzer。
 
 由Codex内部调用自带安装器，无需你运行命令。当前安装器会拒绝覆盖已有同名目录；更新时请让宿主先检查旧版并完成安全替换，不能把失败当成功。安装成功后下一轮对话可用。
 
-仓库尚未发布时，可以把发布ZIP交给支持本地Skill安装的工具，要求安装整个文件夹；不要只复制SKILL.md。
+也可以把发布ZIP交给支持本地Skill安装的工具，要求安装整个文件夹；不要只复制SKILL.md。
 
 ### WorkBuddy 与其他工具
 
 需要宿主支持Agent Skills、读取上传图片和生成本地文件。可向宿主提供仓库链接或安装包并要求安装；**本项目尚未完成WorkBuddy实机安装验收，不保证所有版本支持相同安装入口。** 如果该宿主不支持GitHub链接安装，使用它实际提供的本地Skill导入功能；没有导入功能则不能宣称已安装。
 
-安装验证：已通过官方安装器的离线根目录解析、包解压和复制测试；新项目尚未公开发布，因此未将本仓库的真实GitHub下载安装标记为已通过。规范与验证边界见 [规范核查](references/compatibility.md)。
+安装验证：2026-10-03已通过官方安装器从本仓库真实下载、解压并安装到隔离测试目录；另已通过离线包测试。此结果不等于所有宿主都已完成实机验收。规范与验证边界见 [规范核查](references/compatibility.md)。
 
 ## 使用方法
 

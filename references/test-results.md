@@ -1,5 +1,7 @@
 # V1.0.0 验收记录
 
+发布补充（2026-10-03）：真实GitHub下载安装 **PASS**。官方安装器从 RZ866/xhs-note-breakdown-skill 下载根目录并安装到隔离测试目录；不替换下载响应。下载版本的51项测试和六种报告生成均通过。GitHub Actions的Ubuntu/Windows × Python3.10/3.12四组测试全部通过：[运行记录](https://github.com/RZ866/xhs-note-breakdown-skill/actions/runs/37123555778)。下表保留开发验收当日记录。
+
 日期：2026-10-02。下列结果来自实际执行；没有将未执行项目写成PASS。
 
 | 检查 | 结果 | 证据与边界 |
