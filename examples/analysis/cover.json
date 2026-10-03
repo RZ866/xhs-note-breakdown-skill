@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-02",
+  "example": true,
+  "commerce": "present",
+  "subject": "场景问题、大字层级与工具露出，共同建立点击理由",
+  "materials": [
+    {
+      "id": "M1",
+      "label": "图1：封面插画",
+      "kind": "image",
+      "roles": [
+        "cover"
+      ],
+      "file": "image-01.png",
+      "inspected": true
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "material_id": "M1",
+      "kind": "visual",
+      "location": "图1上方",
+      "observation": "上方深绿色两行大字：“租房台面总是挤？”“先把杯子立起来”。",
+      "clear": true
+    },
+    {
+      "id": "E2",
+      "material_id": "M1",
+      "kind": "visual",
+      "location": "图1中下部",
+      "observation": "中下部是绿色杯架与三个浅色杯子的平面插画，背景以米色台面块面表示；没有人物。",
+      "clear": true
+    },
+    {
+      "id": "E3",
+      "material_id": "M1",
+      "kind": "visual",
+      "location": "图1底部",
+      "observation": "底部独立深绿色价格块写“示例价19.9元”，下方标明折叠杯架、插画演示不代表实拍。",
+      "clear": true
+    }
+  ],
+  "claims": {
+    "product": {
+      "text": "封面文字标注“折叠杯架”；图中为示意插画。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ]
+    },
+    "price": {
+      "text": "封面标注“示例价19.9元”，不能作为真实售价。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E3"
+      ]
+    },
+    "audience": {
+      "text": "可能面向在意台面收纳、希望改善空间利用的租房人群。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "pain": {
+      "text": "封面用“台面总是挤”提出具体空间困扰。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "focus": {
+      "text": "深色大字位于上方浅底留白区，文字对比与字号可能先吸引扫读；中部绿色杯架是第二个较大的视觉单元。没有眼动数据验证阅读顺序。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    },
+    "composition": {
+      "text": "图文上下分区：上方提出问题，中部让工具可见，底部补价格。产品占据中部插画的重要面积，但这里不声称精确占比。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "style": {
+      "text": "画面是扁平插画，不是真人家庭实拍；它能解释摆放关系，却不能充当真实使用或效果证据。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ]
+    },
+    "click": {
+      "text": "场景问句建立相关性，“立起来”给出一种解决方向，杯架露出让方向可理解；价格块补充进一步了解的门槛提示。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "cover_formula": {
+      "text": "明确空间困扰的大字 → 可辨认的解决工具 → 独立价格补充。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "L1a": {
+      "text": "先让读者读到具体场景的问题。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L1b": {
+      "text": "上方大字与浅底对比，降低扫读时的识别负担；对相关人群才可能有效。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L1c": {
+      "text": "学习主信息的层级，不照搬这句文案或假装拥有同一生活场景。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L2a": {
+      "text": "让商品与它处理的问题出现在同一画面关系中。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E2"
+      ]
+    },
+    "L2b": {
+      "text": "杯子和架子的组合比孤立产品图更容易解释用途。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E2"
+      ]
+    },
+    "L2c": {
+      "text": "用自己商品的真实使用方式表达关系，插画不要冒充效果实拍。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E2"
+      ]
+    },
+    "L3a": {
+      "text": "把价格放在次级信息位。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E3"
+      ]
+    },
+    "L3b": {
+      "text": "价格可以补充判断，但不必抢占场景和用途的首要解释位置。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E3"
+      ]
+    },
+    "L3c": {
+      "text": "只展示可核验价格与条件，避免用假低价制造冲动。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E3"
+      ]
+    }
+  },
+  "summary": {
+    "product": "product",
+    "price": "price",
+    "audience": "audience",
+    "pain": "pain",
+    "click": "click",
+    "dna": "cover_formula"
+  },
+  "sections": [
+    {
+      "id": "cover",
+      "heading": "封面如何安排第一眼的信息",
+      "claim_ids": [
+        "focus",
+        "composition",
+        "style",
+        "cover_formula"
+      ]
+    }
+  ],
+  "funnel": [
+    {
+      "stage": "click",
+      "claim_id": "click"
+    }
+  ],
+  "dna": {
+    "traffic": "click",
+    "formula": "cover_formula"
+  },
+  "learning": [
+    {
+      "what": "L1a",
+      "why": "L1b",
+      "transfer": "L1c"
+    },
+    {
+      "what": "L2a",
+      "why": "L2b",
+      "transfer": "L2c"
+    },
+    {
+      "what": "L3a",
+      "why": "L3b",
+      "transfer": "L3c"
+    }
+  ],
+  "image_tasks": [],
+  "metrics": [],
+  "limitations": [
+    "全部内容为原创合成演示，没有真实点击、阅读时长或成交数据。"
+  ],
+  "do_not_copy": [
+    "不要照搬原作者的独有文案、图片、身份或生活故事。",
+    "没有亲自验证的使用效果、承重、销量和耐用性，不得写成自己的体验。"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "小红书带货笔记拆解"
+  short_description: "上传截图或文字，拆解点击、信任与成交逻辑，提炼爆款 DNA 并生成报告"
+  default_prompt: "使用 $xiaohongshu-viral-commerce-note-analyzer 拆一下这些素材，提炼商业逻辑并生成 HTML 报告。"
+policy:
+  allow_implicit_invocation: true

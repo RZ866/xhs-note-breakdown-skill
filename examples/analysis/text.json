@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-02",
+  "example": true,
+  "commerce": "present",
+  "subject": "正文如何把商品放进一个有条件的解决过程",
+  "materials": [
+    {
+      "id": "T1",
+      "label": "用户提供的标题",
+      "kind": "text",
+      "roles": [
+        "title"
+      ],
+      "content": "租房台面总是挤？先把杯子立起来"
+    },
+    {
+      "id": "T2",
+      "label": "用户提供的正文",
+      "kind": "text",
+      "roles": [
+        "body"
+      ],
+      "content": "租房厨房的杯子一多，台面就挤。先量台面和杯子高度，再考虑这个折叠杯架。使用步骤是量尺寸、放架子、摆杯子。商品介绍写它可以折叠，示例标价19.9元。摆放示意看起来更整齐，但这里没有承重与耐用测试。先量尺寸，再判断适不适合；不合适就别买。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E6",
+      "material_id": "T1",
+      "kind": "quote",
+      "location": "标题",
+      "observation": "标题以台面拥挤的问题和把杯子立起来的方向相连。",
+      "clear": true,
+      "quote": "租房台面总是挤？先把杯子立起来"
+    },
+    {
+      "id": "E7",
+      "material_id": "T2",
+      "kind": "quote",
+      "location": "正文开头",
+      "observation": "正文先说明杯子多导致台面挤，再提出量尺寸和考虑折叠杯架。",
+      "clear": true,
+      "quote": "租房厨房的杯子一多，台面就挤。先量台面和杯子高度，再考虑这个折叠杯架。"
+    },
+    {
+      "id": "E8",
+      "material_id": "T2",
+      "kind": "quote",
+      "location": "正文中段",
+      "observation": "正文介绍使用顺序、可折叠卖点和示例价格。",
+      "clear": true,
+      "quote": "使用步骤是量尺寸、放架子、摆杯子。商品介绍写它可以折叠，示例标价19.9元。"
+    },
+    {
+      "id": "E9",
+      "material_id": "T2",
+      "kind": "quote",
+      "location": "正文末段",
+      "observation": "正文明确没有承重与耐用测试，结尾建议按适用性决定。",
+      "clear": true,
+      "quote": "摆放示意看起来更整齐，但这里没有承重与耐用测试。先量尺寸，再判断适不适合；不合适就别买。"
+    }
+  ],
+  "claims": {
+    "product": {
+      "text": "用户提供的正文提及折叠杯架。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E7"
+      ]
+    },
+    "price": {
+      "text": "正文写“示例标价19.9元”，未核验实际售价。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    "click": {
+      "text": "标题把台面困扰和立体收纳方向相连，可能吸引遇到同类问题的人继续了解。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E6"
+      ]
+    },
+    "title": {
+      "text": "标题将“台面挤”与“立起来”连接，先给出改善方向，再让读者从画面与正文理解采用什么工具。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E6"
+      ]
+    },
+    "body": {
+      "text": "正文按“具象困扰→适配条件→工具出现→使用顺序→卖点与价格→测试缺口→自主判断”推进。它让商品承担解决任务，而非只重复推荐。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7",
+        "E8",
+        "E9"
+      ]
+    },
+    "placement": {
+      "text": "折叠杯架首次在正文第二句出现，之前铺垫杯子多和台面挤；同时给出量尺寸条件。商品以待判断的解决工具出现，广告感相对克制，但这不是商业合作状态判定。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7",
+        "E9"
+      ]
+    },
+    "conversion": {
+      "text": "潜在购买理由是明确用途加较低标示价格；主要阻力是尺寸、承重和耐用信息不足。承担购买考虑任务的是适配判断与价格组合，而非已经得到验证的效果。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7",
+        "E8",
+        "E9"
+      ]
+    },
+    "conversionDNA": {
+      "text": "具体用途 × 适配检查 × 明确价格口径；缺少性能证据时保留购买阻力。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7",
+        "E8",
+        "E9"
+      ]
+    },
+    "retention": {
+      "text": "正文逐步给出量尺寸、放架和摆杯信息，让继续阅读有明确的信息收益。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7",
+        "E8"
+      ]
+    },
+    "trust": {
+      "text": "明确未进行性能测试，可能降低单向夸赞感，但不证明实际使用效果。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E9"
+      ]
+    },
+    "scene": {
+      "text": "正文把问题放在租房厨房的杯具收纳场景中。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7"
+      ]
+    },
+    "formula": {
+      "text": "困扰 → 适配条件 → 产品工具 → 使用过程 → 局限与判断。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7",
+        "E8",
+        "E9"
+      ]
+    },
+    "X1a": {
+      "text": "先说明适用条件。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E7"
+      ]
+    },
+    "X1b": {
+      "text": "条件信息让消费者有机会排除不适合的情境。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E7"
+      ]
+    },
+    "X1c": {
+      "text": "用自己产品可核验的规格承接，而非照搬尺寸或故事。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E7"
+      ]
+    },
+    "X2a": {
+      "text": "把使用方式写成动作。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    "X2b": {
+      "text": "量、放、摆比抽象“好用”更容易被理解。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    "X2c": {
+      "text": "记录真实步骤与限制，不虚构使用过程。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    "X3a": {
+      "text": "保留性能信息的空白。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E9"
+      ]
+    },
+    "X3b": {
+      "text": "承认没测过比将外观变化当作耐用性证明更可靠。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E9"
+      ]
+    },
+    "X3c": {
+      "text": "自己的测试做了多少就说多少。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E9"
+      ]
+    }
+  },
+  "summary": {
+    "product": "product",
+    "price": "price",
+    "scene": "scene",
+    "click": "click",
+    "retention": "retention",
+    "trust": "trust",
+    "conversion": "conversion",
+    "dna": "formula"
+  },
+  "sections": [
+    {
+      "id": "title",
+      "heading": "标题逻辑",
+      "claim_ids": [
+        "title"
+      ]
+    },
+    {
+      "id": "body",
+      "heading": "正文功能结构",
+      "claim_ids": [
+        "body"
+      ]
+    },
+    {
+      "id": "placement",
+      "heading": "产品植入",
+      "claim_ids": [
+        "placement"
+      ]
+    },
+    {
+      "id": "conversion",
+      "heading": "成交假设与阻力",
+      "claim_ids": [
+        "conversion"
+      ]
+    }
+  ],
+  "funnel": [
+    {
+      "stage": "click",
+      "claim_id": "click"
+    },
+    {
+      "stage": "retention",
+      "claim_id": "retention"
+    },
+    {
+      "stage": "trust",
+      "claim_id": "trust"
+    },
+    {
+      "stage": "conversion",
+      "claim_id": "conversion"
+    }
+  ],
+  "dna": {
+    "traffic": "click",
+    "retention": "retention",
+    "trust": "trust",
+    "conversion": "conversion",
+    "formula": "formula"
+  },
+  "learning": [
+    {
+      "what": "X1a",
+      "why": "X1b",
+      "transfer": "X1c"
+    },
+    {
+      "what": "X2a",
+      "why": "X2b",
+      "transfer": "X2c"
+    },
+    {
+      "what": "X3a",
+      "why": "X3b",
+      "transfer": "X3c"
+    }
+  ],
+  "image_tasks": [],
+  "metrics": [],
+  "limitations": [
+    "全部内容为原创合成演示，没有真实点击、阅读时长或成交数据。"
+  ],
+  "do_not_copy": [
+    "不要照搬原作者的独有文案、图片、身份或生活故事。",
+    "没有亲自验证的使用效果、承重、销量和耐用性，不得写成自己的体验。"
+  ]
+}

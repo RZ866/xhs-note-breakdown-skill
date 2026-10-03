@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-02",
+  "example": true,
+  "commerce": "uncertain",
+  "subject": "模糊数据不补数，先明确研究边界",
+  "materials": [
+    {
+      "id": "T2",
+      "label": "用户提供的正文",
+      "kind": "text",
+      "roles": [
+        "metrics"
+      ],
+      "content": "用户补充：这张图的销量看不清。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "material_id": "T2",
+      "kind": "user_statement",
+      "location": "用户补充",
+      "observation": "用户说明销量看不清。",
+      "clear": false,
+      "quote": "销量看不清"
+    }
+  ],
+  "claims": {
+    "unknown": {
+      "text": "目前无法辨认销量，不能据此判断商品销售表现或笔记贡献。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  "summary": {},
+  "sections": [
+    {
+      "id": "metrics",
+      "heading": "当前能判断什么",
+      "claim_ids": [
+        "unknown"
+      ]
+    }
+  ],
+  "funnel": [],
+  "dna": {},
+  "learning": [],
+  "image_tasks": [],
+  "metrics": [
+    {
+      "label": "销量",
+      "display": null,
+      "clear": false,
+      "scope": "对象与统计时间未确定",
+      "evidence_id": "E1"
+    }
+  ],
+  "limitations": [
+    "全部内容为原创合成演示，没有真实点击、阅读时长或成交数据。"
+  ],
+  "do_not_copy": [
+    "不要照搬原作者的独有文案、图片、身份或生活故事。",
+    "没有亲自验证的使用效果、承重、销量和耐用性，不得写成自己的体验。"
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-02",
+  "example": true,
+  "commerce": "present",
+  "subject": "用具体空间困扰引出一个可继续了解的方案",
+  "materials": [
+    {
+      "id": "T1",
+      "label": "用户提供的标题",
+      "kind": "text",
+      "roles": [
+        "title"
+      ],
+      "content": "租房台面总是挤？19.9元的折叠杯架，先看看尺寸再决定"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "material_id": "T1",
+      "kind": "quote",
+      "location": "完整标题",
+      "observation": "标题包含租房台面拥挤、价格、折叠杯架及量尺寸条件。",
+      "clear": true,
+      "quote": "租房台面总是挤？19.9元的折叠杯架，先看看尺寸再决定"
+    }
+  ],
+  "claims": {
+    "product": {
+      "text": "标题明确提及折叠杯架。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "price": {
+      "text": "标题标注19.9元；不是当前成交价验证。",
+      "type": "FACT",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "audience": {
+      "text": "可能面向台面空间紧张、需要摆放杯具的租房人群。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "pain": {
+      "text": "具体困扰是台面拥挤，而不是笼统地追求精致生活。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "click": {
+      "text": "问句先让读者判断是否遇到同一困扰，低价信息降低继续了解的心理门槛，尺寸提醒又留下适配判断任务。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "keywords": {
+      "text": "原文关键词：租房、台面、折叠杯架。潜在搜索词可研究“小厨房杯子收纳”；尚无搜索量依据。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "formula": {
+      "text": "具体人群与空间困扰 → 明确工具与价格 → 适配条件提醒。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L1a": {
+      "text": "把宽泛需求写成一个可识别的生活困扰。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L1b": {
+      "text": "“台面挤”比“好物分享”更容易让特定读者辨认相关性。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L1c": {
+      "text": "迁移场景与困扰的关系，使用自己商品真实能解决的问题。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L2a": {
+      "text": "让价格与具体工具一起出现。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L2b": {
+      "text": "读者可以同时判断商品类别与继续了解的成本，而不是被孤立低价吸引。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L2c": {
+      "text": "只使用真实且口径清楚的价格，不复制未核验优惠。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L3a": {
+      "text": "标题留出适配判断，而不是承诺人人适用。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L3b": {
+      "text": "尺寸条件可能减少夸大感，也为后续内容设置需要回答的问题。",
+      "type": "ANALYSIS",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    "L3c": {
+      "text": "后文实际提供适配条件；如果无法兑现，就不要设置这个承诺。",
+      "type": "RECOMMENDATION",
+      "evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  "summary": {
+    "product": "product",
+    "price": "price",
+    "audience": "audience",
+    "pain": "pain",
+    "click": "click",
+    "dna": "formula"
+  },
+  "sections": [
+    {
+      "id": "title",
+      "heading": "标题从哪里建立点击理由",
+      "claim_ids": [
+        "keywords",
+        "click",
+        "formula"
+      ]
+    }
+  ],
+  "funnel": [
+    {
+      "stage": "click",
+      "claim_id": "click"
+    }
+  ],
+  "dna": {
+    "traffic": "click",
+    "formula": "formula"
+  },
+  "learning": [
+    {
+      "what": "L1a",
+      "why": "L1b",
+      "transfer": "L1c"
+    },
+    {
+      "what": "L2a",
+      "why": "L2b",
+      "transfer": "L2c"
+    },
+    {
+      "what": "L3a",
+      "why": "L3b",
+      "transfer": "L3c"
+    }
+  ],
+  "image_tasks": [],
+  "metrics": [],
+  "limitations": [
+    "全部内容为原创合成演示，没有真实点击、阅读时长或成交数据。"
+  ],
+  "do_not_copy": [
+    "不要照搬原作者的独有文案、图片、身份或生活故事。",
+    "没有亲自验证的使用效果、承重、销量和耐用性，不得写成自己的体验。"
+  ]
+}
